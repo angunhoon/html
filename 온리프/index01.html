@@ -7,6 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index01.css">
     <script src="./js/index01.js" defer></script>
+
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -14,28 +22,58 @@
         <div><img src="./img/icon/Logo-w.svg" alt=""></div>
 
         <ul class="nav">
-            <li><a href="#">O.L클리닉</a></li>
-            <li><a href="#">3D 실 리프팅</a></li>
-            <li><a href="#">레이저 리프팅</a></li>
-            <li><a href="#">불륨 & 스킨케어</a></li>
-            <li><a href="#">커뮤니티</a></li>
+            <li><a class="sans" href="#">O.L클리닉</a></li>
+            <li><a class="sans"href="#">3D 실 리프팅</a></li>
+            <li><a class="sans"href="#">레이저 리프팅</a></li>
+            <li><a class="sans"href="#">불륨 & 스킨케어</a></li>
+            <li><a class="sans"href="#">커뮤니티</a></li>
         </ul>
 
         <ul class="lang_login">
             <li class="lang_btn"><img src="./img/header/language.svg" alt=""></li>
             <div class="lang_on">
-                <a href="#">KR</a>
-                <a href="#">EN</a>
-                <a href="#">JP</a>
-                <a href="#">CN</a>
+                <a class="sans" href="#">KR</a>
+                <a class="sans" href="#">EN</a>
+                <a class="sans" href="#">JP</a>
+                <a class="sans" href="#">CN</a>
             </div>
+
             <li class="login_btn"><img src="./img/header/login.svg" alt=""></li>
+            <div class="login">
+                <div class="login_on">
+                    <h1 class="serif">로그인</h1>
+
+                    <ul class="login_input">
+                        <li class="id">
+                            <p class="sans">아이디</p>
+                            <input type="text" class="id_input">
+                        </li>
+
+                        <li class="ps">
+                            <p class="sans">비밀번호</p>
+                            <input type="text" class="ps_input">
+                        </li>
+                    </ul>
+
+                    <div>
+                        <button class="log_in sans">로그인</button>
+                        <button class="new_account sans">회원가입</button>
+                    </div>
+
+                    <ul class="account_search">
+                        <li><a class="sans" href="#">아이디 찾기</a></li>
+                        <li><a class="sans" href="#">비밀번호 찾기</a></li>
+                    </ul>
+
+                    <div class="close_btn"><a href="#"><img src="./img/icon/x.svg" alt=""></a></div>
+                </div>
+            </div>
         </ul>
     </header>
 
     <div class="fix_btn">
         <div class="quick_btn">
-            <p>Quick</p>
+            <p class="sans">Quick</p>
         </div>
 
         <a class="top_btn" href="">
