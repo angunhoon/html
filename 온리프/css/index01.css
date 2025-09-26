@@ -21,7 +21,6 @@ li {
 }
 
 .container {
-    transition: all 0.3s ease-in;
     scroll-behavior: smooth;
 }
 
@@ -269,11 +268,6 @@ section {
     /* 섹션 시작 부분에서 스냅 */
 }
 
-/* section h1 {
-    transition: all 0.3s ease-in-out;
-    transition-delay: 0.2s;
-} */
-
 /* 스크롤 스냅 END */
 
 /* Section 1 START */
@@ -319,3 +313,13 @@ section {
 
 
 /* Section 7 END */
+
+/* Footer START */
+
+footer {
+    height: 285px;
+    background-color: #000;
+    scroll-snap-align: start;
+}
+
+/* Footer 7 END */
