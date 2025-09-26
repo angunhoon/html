@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+/* 헤더 START */
+
+header {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 38px;
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 830px;
+    height: 60px;
+    background-color: #28164E;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 46px;
+    box-sizing: border-box;
+}
+
+header .nav a {
+    color: #fff;
+}
+
+.lang_login {
+    width: 68px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang_login li {
+    cursor: pointer;
+}
+
+.lang_on {
+    width: 54px;
+    height: 124px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 13px 0;
+    box-sizing: border-box;
+    top: 70px;
+    right: 66px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.lang_on a:hover{
+    text-decoration: underline;
+}
+
+.fix_btn {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+}
+
+.fix_btn .quick_btn {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    background-color: #5F3AAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.fix_btn .top_btn {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    background-color: #5F3AAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* 헤더&픽스 END */
+
+/* 스크롤 스냅 START */
+
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    /* y축 스냅 */
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    scroll-snap-align: start;
+    /* 섹션 시작 부분에서 스냅 */
+}
+
+/* section h1 {
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+} */
+
+/* 스크롤 스냅 END */
+
+/* Section 1 START */
+
+#section1 {
+    background-image: url(../img/sec1/visual_01.png);
+}
+
+/* Section 1 End */
+
+/* Section 2 START */
+
+
+
+/* Section 2 END */
+
+/* Section 3 START */
+
+
+
+/* Section 3 END */
+
+/* Section 4 START */
+
+
+
+/* Section 4 END */
+
+/* Section 5 START */
+
+
+
+/* Section 5 END */
+
+/* Section 6 START */
+
+
+
+/* Section 6 END */
+
+/* Section 7 START */
+
+
+
+/* Section 7 END */

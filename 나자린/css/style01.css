@@ -1,0 +1,115 @@
+* {margin: 0; padding: 0;}
+a {text-decoration: none; color: #000;}
+li {list-style: none; color: #000;}
+
+/* 헤더 START */
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 79px;
+}
+.nav {
+    width: 1240px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .main_menu {
+    display: flex;
+}
+
+.nav .main_menu li a {
+    margin: 0 30px;
+    padding: 10px 0;
+    color: #fff;
+}
+
+/* 헤더 END */
+
+/* 메인페이지 START */
+
+.main_page_logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.main_page_main {
+    margin-top: 194px;
+    position: relative;
+}
+
+.main_page_ {
+    display: flex;
+}
+
+.sub_img {
+    width: 40%;
+}
+
+.sub_img_dual {
+    display: flex;
+    margin-top: 26px;
+}
+
+.sub1 {
+    width: 797px;
+    height: 370px;
+}
+
+.sub2 {
+    width: 254px;
+    height: 640px;
+    margin-right: 24px;
+}
+
+.sub3 {
+    width: 519px;
+    height: 329px;
+}
+
+.main_page_text {
+    margin: 0 284px;
+    text-align: center;
+    width: 60%;
+}
+
+.main_page_text li:nth-of-type(1) {
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 12px;
+}
+
+.main_page_text li:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 95px;
+}
+
+.main_page_text li:nth-of-type(3) {
+    font-size: 65px;
+    margin-bottom: 67px;
+}
+
+.main_page_text li:nth-of-type(4) {
+    font-size: 22px;
+    margin-bottom: 104px;
+}
+
+.main_page_text li:nth-of-type(5) {
+    font-size: 18px;
+    margin-bottom: 180px;
+}
+
+.line {
+    border-bottom: 1px solid #DB00ff;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+/* 메인페이지 END */
