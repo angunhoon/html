@@ -32,57 +32,109 @@ header {
     height: 80px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     position: fixed;
     padding: 0 38px;
     box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
 }
 
-/* 헤더 active START */
-
-header.active {
-    background-color: #fff;
+.header_logo {
+    margin-top: 23px;
 }
 
-header.active .header_logo img,
-header.active .lang_btn img,
-header.active .login_btn img {
-    filter: invert(23%) sepia(34%) saturate(6819%) hue-rotate(253deg) brightness(72%) contrast(80%);
+nav {
+    height: inherit;
 }
 
-header.active .nav {
-    background-color: transparent;
-}
-
-header.active .nav a {
-    color: #000;
-}
-
-/* 헤더 active END */
-
-.nav {
+.main_menu {
     width: 830px;
     height: 60px;
     background-color: #28164E;
     border-radius: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 46px;
     box-sizing: border-box;
+    margin-top: 10px;
+    transition: all 0.2s ease-in;
 }
 
-header .nav a {
+.main_menu.active {
+    width: 1100px;
+}
+
+.main_menu>li {
+    flex: 1;
+}
+
+.menus {
+    position: relative;
+}
+
+.menus::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #5F3AAC;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+.menus:hover::before {
+    transform: scaleX(1);
+}
+
+.sub_menu a {
+    position: relative;
+}
+
+.sub_menu a::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: transparent;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.sub_menu a:hover::before {
+    left: 10%;
+    background-color: #5F3AAC;
+}
+
+.main_menu a {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
+    display: block;
+    text-align: center;
+    padding: 18px 0;
 }
+
+.sub_menu a {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 25px 0;
+}
+
+/* 언어 팝업 START */
 
 .lang_login {
     width: 68px;
     height: 24px;
     display: flex;
     justify-content: space-between;
+    margin-top: 28px;
 }
 
 .lang_login li {
@@ -114,6 +166,8 @@ header .nav a {
 .lang_on a:hover{
     text-decoration: underline;
 }
+
+/* 언어 팝업 END */
 
 /* 로그인팝업 START */
 
@@ -241,6 +295,28 @@ header .nav a {
 
 /* 로그인팝업 END */
 
+/* 헤더 active START */
+
+header.active {
+    background-color: #fff;
+}
+
+header.active .header_logo img,
+header.active .lang_btn img,
+header.active .login_btn img {
+    filter: invert(23%) sepia(34%) saturate(6819%) hue-rotate(253deg) brightness(72%) contrast(80%);
+}
+
+header.active .main_menu {
+    background-color: transparent;
+}
+
+header.active .main_menu a {
+    color: #000;
+}
+
+/* 헤더 active END */
+
 .fix_btn {
     position: absolute;
     right: 50px;
@@ -349,3 +425,4 @@ footer {
 }
 
 /* Footer 7 END */
+
