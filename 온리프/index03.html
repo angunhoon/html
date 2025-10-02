@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/index02.css">
-    <script src="./js/index02.js" defer></script>
+    <link rel="stylesheet" href="./css/index03.css">
+    <script src="./js/index03.js" defer></script>
 
     <!-- 웹폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -217,16 +217,49 @@
                             완성합니다.</li>
                     </ul>
 
-                    <div class="sec3_menus">
-                        
-                    </div>
+                    <div class="tab">
+                        <!-- 탭 버튼 -->
+                        <div class="tab_buttons">
+                            <button class="tab_button active" data-tab="tab1">
+                                <img src="./img/sec3/sec03_icon01.svg" alt="">
+                                <p>풀페이스 실리프팅</p>
+                            </button>
 
-                    <div class="sec3_img">
+                            <button class="tab_button" data-tab="tab2">
+                                <img src="./img/sec3/sec03_icon02.svg" alt="">
+                                <p>팔자주름 복원클리닉</p>
+                            </button>
 
-                    </div>
+                            <button class="tab_button" data-tab="tab3">
+                                <img src="./img/sec3/sec03_icon03.svg" alt="">
+                                <p>이마주름 복원클리닉</p>
+                            </button>
 
-                    <div class="sec3_text">
+                            <button class="tab_button" data-tab="tab4">
+                                <img src="./img/sec3/sec03_icon04.svg" alt="">
+                                <p>30분 간편 리프팅</p>
+                            </button>
 
+                            <button class="tab_button" data-tab="tab5">
+                                <img src="./img/sec3/sec03_icon05.svg" alt="">
+                                <p>에프터케어 프로그램</p>
+                            </button>
+
+                            <button class="tab_button" data-tab="tab6">
+                                <img src="./img/sec3/sec03_icon06.svg" alt="">
+                                <p>실리프팅 재시술</p>
+                            </button>
+                        </div>
+
+                        <!-- 탭 콘텐츠 -->
+                        <div class="tab_contents">
+                            <!-- data-tab 으로 버튼과 연결 -->
+                            <div class="tab_content" data-tab="tab1">탭1-1</div>
+                            <div class="tab_content" data-tab="tab1">탭1-2</div>
+
+                            <div class="tab_content" data-tab="tab2">탭2-1</div>
+                            <div class="tab_content" data-tab="tab2">탭2-2</div>
+                        </div>
                     </div>
                 </div>
             </section>
