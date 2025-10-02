@@ -454,7 +454,7 @@ section {
     position: relative;
 }
 
-.section2_container {
+.sec2_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -462,7 +462,7 @@ section {
     bottom: 14%;
 }
 
-.section2_img_container {
+.sec2_img_container {
     width: 486px;
     height: 608px;
     border-radius: 500px;
@@ -470,7 +470,7 @@ section {
     margin-right: 100px;
 }
 
-.section2_img {
+.sec2_img {
     width: 100%;
     height: 100%;
     background-image: url(../img/sec2/listfile_1743469519_0.jpg);
@@ -478,42 +478,42 @@ section {
     background-size: cover;
 }
 
-.section2_text_container {
+.sec2_text_container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.section2_text_container p {
+.sec2_text_container p {
     text-align: center;
 }
 
-.section2_text_container p:nth-of-type(1) {
+.sec2_text_container p:nth-of-type(1) {
     color: #5F3AAC;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 30px;
 }
 
-.section2_text_container p:nth-of-type(2) {
+.sec2_text_container p:nth-of-type(2) {
     font-size: 42px;
     font-weight: 400;
     margin-bottom: 50px;
     line-height: 65px;
 }
 
-.section2_text_container p:nth-of-type(2) span {
+.sec2_text_container p:nth-of-type(2) span {
     color: #5F3AAC;
 }
 
-.section2_text_container p:nth-of-type(3) {
+.sec2_text_container p:nth-of-type(3) {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
-.section2_text_container p:nth-of-type(4) {
+.sec2_text_container p:nth-of-type(4) {
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 50px;
@@ -521,7 +521,7 @@ section {
     line-height: 14px;
 }
 
-.section2_text_container p:nth-of-type(5) {
+.sec2_text_container p:nth-of-type(5) {
     font-size: 16px;
     font-weight: 600;
     line-height: 19px;
@@ -535,7 +535,7 @@ section {
     background-color: #28164E;
 }
 
-.section3_container {
+.sec3_container {
     width: 100%;
     height: 100%;
 }
@@ -571,12 +571,12 @@ section {
 
 /* TEST */
 
-.tab {
+.sec3_tab {
     width: 100%;
 }
 
 /* 탭 버튼 영역 */
-.tab_buttons {
+.sec3_tab_buttons {
     width: 100%;
     height: 112px;
     display: flex;
@@ -588,7 +588,7 @@ section {
     gap: 65px;
 }
 
-.tab_button {
+.sec3_tab_button {
     /* 버튼 너비 동일하게 */
     width: 120px;
     height: 74px;
@@ -597,19 +597,26 @@ section {
     border: none;
 }
 
-.tab_button img{
-    /* filter: invert(93%) sepia(10%) saturate(729%) hue-rotate(332deg) brightness(98%) contrast(91%); */
-
+.sec3_tab_button p {
+    color: #EFDBC4;
+    opacity: 0.3;
 }
 
-.tab_button p {
-    color: #EFDBC4
+.sec3_tab_button img {
+    opacity: 0.3;
 }
 
 /* 선택된 탭 버튼 스타일 */
+.sec3_tab_button.active p{
+    opacity: 1;
+}
+
+.sec3_tab_button.active img{
+    opacity: 1;
+}
 
 /* 콘텐츠 영역 (그리드 6등분 고정) */
-.tab_contents {
+.sec3_tab_contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -621,7 +628,7 @@ section {
 }
 
 /* 개별 콘텐츠 아이템 */
-.tab_content {
+.sec3_tab_content {
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
@@ -630,12 +637,10 @@ section {
 }
 
 /* 전환 시 애니메이션 효과 (살짝 축소 + 아래로 이동 + 투명) */
-.tab_content.active {
+.sec3_tab_content.active {
     opacity: 0;
     transform: scale(0.96) translateY(20px);
 }
-
-/* TEST */
 
 /* Section 3 END */
 

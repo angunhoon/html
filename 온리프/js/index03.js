@@ -108,8 +108,8 @@ topBtn.addEventListener('mouseleave', () => {
 //sec3 탭메뉴
 
 // 모든 버튼과 콘텐츠 가져오기
-const tabButtons = document.querySelectorAll('.tab_button');
-const tabContents = document.querySelectorAll('.tab_content');
+const tabButtons = document.querySelectorAll('.sec3_tab_button');
+const tabContents = document.querySelectorAll('.sec3_tab_content');
 
 // 페이지 로드 시 기본으로 tab1 콘텐츠만 보여주기
 window.addEventListener('DOMContentLoaded', () => {
@@ -151,3 +151,5 @@ tabButtons.forEach(button => {
         button.classList.add('active');
     });
 });
+
+
