@@ -10,77 +10,74 @@
   padding: 0;
   box-sizing: border-box;
 }
+li{list-style: none;}
 
-body {
+.a{
+  margin: 100px auto;
+  background-color: gray;
+  width: 1280px;
+  height: 450px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #f5f5f5;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-  width: max-content;
+.b{
+  width: 66px;
+  border-radius: 500px;
+  background-color: aqua;
 }
 
-.main_menu {
-  position: relative;
-}
-
-.main_menu > a {
-  display: block;
-  padding: 12px 42px;
-  background-color: crimson;
-  color: #fff;
-  position: relative;
-  cursor: pointer;
-}
-
-/* ::after로 서브 메뉴 만들기 */
-.main_menu > a::after {
-  content: "서브1-1 • 서브1-2 • 서브1-3 • 서브1-4 • 서브1-5";
-  position: absolute;
-  right: 100%; /* 왼쪽으로 펼치기 */
-  top: 0;
-  background: #fff;
-  border: 1px solid crimson;
-  padding: 12px;
-  white-space: nowrap;
-  transform-origin: right center;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-  pointer-events: none; /* 클릭 방해 안 함 */
-}
-
-/* 클릭 시 열리게 JS 클래스 */
-.main_menu.active > a::after {
-  transform: scaleX(1);
-  pointer-events: auto;
+.b.active{
+  
 }
 </style>
 </head>
 <body>
 
-<ul class="nav">
-  <li class="main_menu"><a href="#">메뉴1</a></li>
-  <li class="main_menu"><a href="#">메뉴2</a></li>
-  <li class="main_menu"><a href="#">메뉴3</a></li>
+<ul class="">
+  <li class="b active">
+    <div></div>
+    <div></div>
+  </li>
+
+  <li class="b">
+
+  </li>
+
+  <li class="b">
+
+  </li>
+  
+  <li class="b">
+
+  </li>
+
+  <li class="b">
+
+  </li>
+
+  <li class="b">
+
+  </li>
 </ul>
 
-<script>
-const menus = document.querySelectorAll('.main_menu');
 
-menus.forEach(menu => {
-  menu.addEventListener('click', e => {
-    e.preventDefault();
-    menus.forEach(m => m.classList.remove('active')); // 다른 메뉴 닫기
-    menu.classList.add('active'); // 클릭한 메뉴 열기
-  });
-});
+
+
+
+
+
+<script>
+// const menus = document.querySelectorAll('.main_menu');
+
+// menus.forEach(menu => {
+//   menu.addEventListener('click', e => {
+//     e.preventDefault();
+//     menus.forEach(m => m.classList.remove('active')); // 다른 메뉴 닫기
+//     menu.classList.add('active'); // 클릭한 메뉴 열기
+//   });
+// });
 </script>
 
 </body>

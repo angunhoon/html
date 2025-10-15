@@ -1134,18 +1134,18 @@ section {
     border-right: 1px solid rgba(40, 22, 78, 0.5);
 }
 
-.sec5_container>p{
+.sec5_container>p {
     text-align: center;
 }
 
-.sec5_container>p:nth-of-type(1){
+.sec5_container>p:nth-of-type(1) {
     font-size: 12px;
     font-weight: 300;
     color: #5F3AAC;
     padding-top: 100px;
 }
 
-.sec5_container>p:nth-of-type(2){
+.sec5_container>p:nth-of-type(2) {
     font-size: 40px;
     font-weight: 200;
     margin-top: 20px;
@@ -1153,9 +1153,52 @@ section {
 }
 
 .sec5_cont_wrap {
-    background-color: red;
+    background-color: beige;
     width: 100%;
     height: 450px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ----------------------------------- test ----------------------------------- */
+
+.sec5_content {
+    width: 66px;
+    height: 450px;
+    border-radius: 500px;
+    background-color: #28164E;
+    position: relative;
+}
+
+.sec5_num {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 500px;
+    color: #5F3AAC;
+    background: #EFDBC4;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sec5_title {
+    position: absolute;
+    top: 45%;
+    left: -30px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    font-weight: 500;
+    transform: rotate(90deg);
+    width: max-content;
+}
+
+.sec5_content_hover {
+    display: none;
 }
 
 /* Section 5 END */

@@ -182,3 +182,4 @@ var mainSwiper = new Swiper(".mySwiper", {
         disableOnInteraction: false,
     }
 });
+
