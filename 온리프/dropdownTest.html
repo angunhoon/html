@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .nav {
+            margin: 100px auto;
+            width: max-content;
+            border: 1px solid red;
+        }
+
+        .nav .main_menu>a {
+            padding: 12px 42px;
+            background-color: crimson;
+            display: block;
+            color: #fff;
+        }
+
+        .sub_menu {
+           
+            overflow: hidden;
+            transition: height 0.3s ease; /* 애니메이션 */
+        }
+
+        .sub_menu li a {
+            padding: 12px 42px;
+            display: block;
+        }
+
+        .sub_menu li:hover a {
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="main_menu">
+            <a href="#" >메뉴1</a>
+            <ul class="sub_menu" id="첫번째">
+                <li><a href="#">서브1-1</a></li>
+                <li><a href="#">서브1-2</a></li>
+                <li><a href="#">서브1-3</a></li>
+                <li><a href="#">서브1-4</a></li>
+                <li><a href="#">서브1-5</a></li>
+            </ul>
+        </li>
+
+        <li class="main_menu">
+            <a href="#">메뉴2</a>
+            <ul class="sub_menu" id="두번째">
+                <li><a href="#">서브2-1</a></li>
+                <li><a href="#">서브2-2</a></li>
+                <li><a href="#">서브2-3</a></li>
+                <li><a href="#">서브2-4</a></li>
+                <li><a href="#">서브2-5</a></li>
+            </ul>
+        </li>
+
+        <li class="main_menu">
+            <a href="#">메뉴3</a>
+            <ul class="sub_menu" id="세번째">
+                <li><a href="#">서브3-1</a></li>
+                <li><a href="#">서브3-2</a></li>
+                <li><a href="#">서브3-3</a></li>
+                <li><a href="#">서브3-4</a></li>
+                <li><a href="#">서브3-5</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        const mainBtns = document.querySelectorAll('.main_menu > a');
+        const subMenus = document.querySelectorAll('.sub_menu');
+
+        // 초기 닫기
+        subMenus.forEach(sub =>{
+            sub.style.height = "0px"
+        });
+
+        mainBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault(); //새로고침 방지
+
+                const currentSub = btn.nextElementSibling; // 현재 클릭한 서브메뉴
+                console.log(currentSub);
+
+                subMenus.forEach(sub => {
+                    sub.style.height = "0px"; // 모든 서브 메뉴 닫기
+                  
+                    if( currentSub.clientHeight > 0){
+                         sub.style.height = "0px"; //열려있으면 닫기
+                    }else{
+                         currentSub.style.height = sub.scrollHeight + "px" //닫혀 있으면 열기
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
