@@ -1158,6 +1158,7 @@ section {
     height: 450px;
     display: flex;
     justify-content: flex-end;
+    gap: 15px;
 }
 
 /* ----------------------------------- test ----------------------------------- */
@@ -1168,6 +1169,10 @@ section {
     border-radius: 500px;
     background-color: #28164E;
     position: relative;
+}
+
+.sec5_content.on {
+    width: 875px;
 }
 
 .sec5_num {
@@ -1200,6 +1205,52 @@ section {
 .sec5_content_hover {
     display: none;
 }
+
+.sec5_content.on .sec5_content_hover {
+    height: 100%;
+    display: flex;
+    position: relative;
+    background-color: #5F3AAC;
+    border-radius: 33px;
+}
+
+.sec5_content:nth-of-type(1) .sec5_content_hover {
+    background-image: url(../img/sec5/sec04_img01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec5_content:nth-of-type(2) .sec5_content_hover {
+    background-image: url(../img/sec5/sec04_list_img02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec5_content:nth-of-type(3) .sec5_content_hover {
+    background-image: url(../img/sec5/sec04_list_img03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec5_content:nth-of-type(4) .sec5_content_hover {
+    background-image: url(../img/sec5/sec04_list_img04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec5_content:nth-of-type(5) .sec5_content_hover {
+    background-image: url(../img/sec5/sec04_list_img05.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec5_content:nth-of-type(6) .sec5_content_hover {
+    background-image: url(../img/sec5/sec04_list_img06.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 /* Section 5 END */
 
