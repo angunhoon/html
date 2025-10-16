@@ -183,3 +183,16 @@ var mainSwiper = new Swiper(".mySwiper", {
     }
 });
 
+//sec5 드랍
+
+const sec5Contents = document.querySelectorAll('.sec5_content');
+
+sec5Contents.forEach(sec5Content => {
+    sec5Content.addEventListener('click', () => {
+        sec5Contents.forEach(sec5ContentRemove => {
+            sec5ContentRemove.classList.remove('on');
+        });
+
+        sec5Content.classList.add('on');
+    });
+});

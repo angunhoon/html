@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 기본 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .tab {
+            width: 100%;
+            max-width: 600px;
+            /* 최대 폭 제한 */
+            margin: 100px auto;
+            /* 위 100px 띄우고 가운데 정렬 */
+        }
+
+        /* 탭 버튼 영역 */
+        .tab_buttons {
+            display: flex;
+        }
+
+        .tab_button {
+            flex: 1;
+            /* 버튼 너비 동일하게 */
+            padding: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        /* 선택된 탭 버튼 스타일 */
+        .tab_button.active {
+            color: #fff;
+            border-bottom: none;
+            /* 콘텐츠와 연결되도록 아래 테두리 제거 */
+            background-color: crimson;
+        }
+
+        /* 콘텐츠 영역 (그리드 4등분 고정) */
+        .tab_contents {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* 4등분 */
+            gap: 20px;
+            /* 아이템 사이 간격 */
+            border: 1px solid #ccc;
+            border-top: none;
+            /* 버튼과 겹치는 부분은 위쪽 테두리 제거 */
+            padding: 20px;
+        }
+
+        /* 개별 콘텐츠 아이템 */
+        .tab_content {
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: all 0.3s ease-out;
+            /* 애니메이션 부드럽게 */
+        }
+
+        /* 전환 시 애니메이션 효과 (살짝 축소 + 아래로 이동 + 투명) */
+        .tab_content.active {
+            opacity: 0;
+            transform: scale(0.96) translateY(20px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+        <!-- 탭 버튼 -->
+        <div class="tab_buttons">
+            <button class="tab_button active" data-tab="tab1">탭1</button>
+            <button class="tab_button" data-tab="tab2">탭2</button>
+            <button class="tab_button" data-tab="tab3">탭3</button>
+        </div>
+
+        <!-- 탭 콘텐츠 -->
+        <div class="tab_contents">
+            <!-- data-tab 으로 버튼과 연결 -->
+            <div class="tab_content" data-tab="tab1">탭1-1</div>
+            <div class="tab_content" data-tab="tab1">탭1-2</div>
+            <div class="tab_content" data-tab="tab1">탭1-3</div>
+            <div class="tab_content" data-tab="tab1">탭1-4</div>
+            <div class="tab_content" data-tab="tab1">탭1-5</div>
+            <div class="tab_content" data-tab="tab1">탭1-6</div>
+            <div class="tab_content" data-tab="tab1">탭1-7</div>
+            <div class="tab_content" data-tab="tab2">탭2-1</div>
+            <div class="tab_content" data-tab="tab2">탭2-2</div>
+            <div class="tab_content" data-tab="tab3">탭3-1</div>
+            <div class="tab_content" data-tab="tab3">탭3-2</div>
+            <div class="tab_content" data-tab="tab3">탭3-3</div>
+            <div class="tab_content" data-tab="tab3">탭3-4</div>
+            <div class="tab_content" data-tab="tab3">탭3-5</div>
+        </div>
+    </div>
+
+    <script>
+        // 모든 버튼과 콘텐츠 가져오기
+        const tabButtons = document.querySelectorAll('.tab_button');
+        const tabContents = document.querySelectorAll('.tab_content');
+
+        // 페이지 로드 시 기본으로 tab1 콘텐츠만 보여주기
+        window.addEventListener('DOMContentLoaded', () => {
+            tabContents.forEach(content => {
+                if (content.dataset.tab === 'tab1') {
+                    content.style.display = "block"; // tab1은 보이기
+                } else {
+                    content.style.display = "none";  // 나머지는 숨기기
+                }
+            });
+        });
+
+        // 각 버튼에 클릭 이벤트 등록
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.dataset.tab; // 클릭한 버튼의 data-tab 값
+
+                // 모든 버튼에서 active 제거
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // 콘텐츠 갱신
+                tabContents.forEach(content => {
+                    if (content.dataset.tab === target) {
+                        content.style.display = "block"; // 선택된 탭만 표시
+                    } else {
+                        content.style.display = "none"; // 나머지는 숨기기
+                    }
+
+                    // 애니메이션 효과 (active 클래스 잠깐 부여했다 제거)
+                    content.classList.add('active');
+                    setTimeout(() => {
+                        content.classList.remove('active');
+                    }, 10);
+                });
+
+                // 클릭된 버튼에 active 추가
+                button.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
