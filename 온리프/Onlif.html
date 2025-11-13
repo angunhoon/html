@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Onlif.css">
+    <script src="./js/Onlif.js" defer></script>
+
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header_logo"><img src="./img/icon/Logo-w.svg" alt=""></div>
+
+            <nav>
+                <ul class="main_menu">
+                    <li>
+                        <a class="menus sans" href="#">O.L클리닉</a>
+                        <ul class="sub_menu">
+                            <li><a class="sans" href="#">대표원장 스토리</a></li>
+                            <li><a class="sans" href="#">의료진 소개</a></li>
+                            <li><a class="sans" href="#">보유장비</a></li>
+                            <li><a class="sans" href="#">맞춤형 리프팅</a></li>
+                            <li><a class="sans" href="#">체계적인 안전시스템</a></li>
+                            <li><a class="sans" href="#">진료안내 및 오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menus sans" href="#">3D 실 리프팅</a>
+                        <ul class="sub_menu">
+                            <li><a class="sans" href="#">플레이스 실리프팅</a></li>
+                            <li><a class="sans" href="#">팔자주름 복원 클리닉</a></li>
+                            <li><a class="sans" href="#">이마주름 복원 클리닉</a></li>
+                            <li><a class="sans" href="#">30분 간편 리프팅</a></li>
+                            <li><a class="sans" href="#">애프터케어 프로그램</a></li>
+                            <li><a class="sans" href="#">실리프팅 재시술</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menus sans" href="#">레이저 리프팅</a>
+                        <ul class="sub_menu">
+                            <li><a class="sans" href="#">슈링크 리프팅</a></li>
+                            <li><a class="sans" href="#">포텐자 리프팅</a></li>
+                            <li><a class="sans" href="#">토르 리프팅</a></li>
+                            <li><a class="sans" href="#">더블타이트</a></li>
+                            <li><a class="sans" href="#">리프팅 부스터</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menus sans" href="#">불륨 & 스킨케어</a>
+                        <ul class="sub_menu">
+                            <li><a class="sans" href="#">O.L 볼륨 프로그램</a></li>
+                            <li><a class="sans" href="#">필러 · 보톡스</a></li>
+                            <li><a class="sans" href="#">윤곽주사</a></li>
+                            <li><a class="sans" href="#">토닝케어 프로그램</a></li>
+                            <li><a class="sans" href="#">프리미엄 스킨케어</a></li>
+                            <li><a class="sans" href="#">올인원 웰빙 프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menus sans" href="#">커뮤니티</a>
+                        <ul class="sub_menu">
+                            <li><a class="sans" href="#">온라인 상담</a></li>
+                            <li><a class="sans" href="#">리얼 매거진</a></li>
+                            <li><a class="sans" href="#">시술 전후 사진</a></li>
+                            <li><a class="sans" href="#">기분 좋은 한마디</a></li>
+                            <li><a class="sans" href="#">O.L 다이어리</a></li>
+                            <li><a class="sans" href="#">이벤트 · 공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="lang_login">
+                <li class="lang_btn"><img src="./img/header/language.svg" alt=""></li>
+                <div class="lang_on">
+                    <a class="sans" href="#">KR</a>
+                    <a class="sans" href="#">EN</a>
+                    <a class="sans" href="#">JP</a>
+                    <a class="sans" href="#">CN</a>
+                </div>
+
+                <li class="login_btn"><img src="./img/header/login.svg" alt=""></li>
+                <div class="login">
+                    <div class="login_on">
+                        <h1 class="serif">로그인</h1>
+
+                        <ul class="login_input">
+                            <li class="id">
+                                <p class="sans">아이디</p>
+                                <input type="text" class="id_input">
+                            </li>
+
+                            <li class="ps">
+                                <p class="sans">비밀번호</p>
+                                <input type="text" class="ps_input">
+                            </li>
+                        </ul>
+
+                        <div>
+                            <button class="log_in sans">로그인</button>
+                            <button class="new_account sans">회원가입</button>
+                        </div>
+
+                        <ul class="account_search">
+                            <li><a class="sans" href="#">아이디 찾기</a></li>
+                            <li><a class="sans" href="#">비밀번호 찾기</a></li>
+                        </ul>
+
+                        <div class="close_btn"><a href="#"><img src="./img/icon/x.svg" alt=""></a></div>
+                    </div>
+                </div>
+            </ul>
+        </header>
+
+        <div class="fix_btn">
+            <div class="quick_area">
+                <div class="quick_menu_container">
+                    <div class="quick_menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/header/quick-menu/pencil.svg" alt="">
+                                    <p class="sans">간편진료예약</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/header/quick-menu/pencil-paper.svg" alt="">
+                                    <p class="sans">네이버예약</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/header/quick-menu/headset.svg" alt="">
+                                    <p class="sans">온라인상담</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/header/quick-menu/chat.svg" alt="">
+                                    <p class="sans">카카오상담</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="quick_btn">
+                    <p class="sans">Quick</p>
+                </div>
+            </div>
+
+            <a class="top_btn" href="#home">
+                <img src="./img/header/quick-menu/arrow-up.svg" alt="">
+            </a>
+
+        </div>
+
+        <main>
+            <section class="section1" id="home">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/sec1/visual_01.png" />
+                            <div class="sec1_visual_content visual_01_content">
+                                <p class="serif">
+                                    FACELIFT & SKIN TIGHTENING
+                                </p>
+
+                                <p class="serif">
+                                    <span>오직 실리프팅 하나에만</span><br>
+                                    집중합니다.
+                                </p>
+
+                                <p class="sans">
+                                    <span>섬세함</span>이 다르기에
+                                    <span>당김</span>도 다릅니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./img/sec1/visual_02.png" />
+                            <div class="sec1_visual_content visual_02_content">
+                                <p class="serif">
+                                    FACELIFT & SKIN TIGHTENING
+                                </p>
+
+                                <p class="serif">
+                                    나에게 꼭 맞는 리프팅으로<br>
+                                    <span>입체적인 얼굴라인</span>을 완성합니다.
+                                </p>
+                                <ul>
+                                    <li class="visual_02_point visual_02_point1">
+                                        <img src="./img/sec1/visual_img02_icon01.svg" alt="">
+                                        <p class="sans">3D 실 리프팅</p>
+                                    </li>
+
+                                    <li class="visual_02_point visual_02_point2">
+                                        <img src="./img/sec1/visual_img02_icon02.svg" alt="">
+                                        <p class="sans">레이저 리프팅</p>
+                                    </li>
+
+                                    <li class="visual_02_point visual_02_point3">
+                                        <img src="./img/sec1/visual_img02_icon03.svg" alt="">
+                                        <p class="sans">볼륨 리프팅</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./img/sec1/visual_03.png" />
+                            <div class="sec1_visual_content visual_03_content">
+                                <p class="serif">
+                                    FACELIFT & SKIN TIGHTENING
+                                </p>
+
+                                <p class="serif">
+                                    엘라스티 키닥터 대표원장이<br>
+                                    직접 진료하고 시술합니다.
+                                </p>
+
+                                <p class="sans">
+                                    글로벌 메디컬 에스테틱 브랜드 엘라스티의 키닥터인 대표원장이 직접 시술합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- 썸네일 -->
+                <div thumbsSlider="" class="swiper thumSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/sec1/visual_thumb01.png" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./img/sec1/visual_thumb02.png" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./img/sec1/visual_thumb03.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section2">
+                <div class="sec2_container">
+                    <div class="sec2_img_container">
+                        <div class="sec2_img"></div>
+                    </div>
+
+                    <div class="sec2_text_container">
+                        <p class="serif">FACELIFT & SKIN TIGHTENING</p>
+
+                        <p class="serif">
+                            <span class="serif">실 리프팅</span><br>
+                            무조건 많이 당긴다고 좋아질까요?
+                        </p>
+
+                        <p class="sans">NO! 그렇지 않습니다!</p>
+
+                        <p class="sans">
+                            실 리프팅은 단순히 실을 넣고 많이 당긴다고 만족스러운 라인이 만들어지는 것은 아닙니다.<br>당기기만 한다면 과해 보일 수 있고, 표정의 움직임에 부자연스러움이
+                            느껴질 수 있습니다.
+                        </p>
+
+                        <p class="serif">
+                            온리프클리닉은 피부타입과 시술 이력, 다양한 피부 타입에 맞춰 꼭 맞는<br>최적의 리프팅 실을 선택하여 시술하기 때문에 당김의 결과가 다릅니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section3">
+                <div class="sec3_container">
+                    <ul class="sec3_title">
+                        <li class="serif">FACELIFT & SKIN TIGHTENING</li>
+                        <li class="serif">조화를 이루는 아름다운 라인을<br>
+                            완성합니다.</li>
+                    </ul>
+
+                    <div class="sec3_tab">
+                        <!-- 탭 버튼 -->
+                        <div class="sec3_tab_buttons">
+                            <button class="sec3_tab_button active" data-tab="tab1">
+                                <img src="./img/sec3/sec03_icon01.svg" alt="">
+                                <p>풀페이스 실리프팅</p>
+                            </button>
+
+                            <button class="sec3_tab_button" data-tab="tab2">
+                                <img src="./img/sec3/sec03_icon02.svg" alt="">
+                                <p>팔자주름 복원클리닉</p>
+                            </button>
+
+                            <button class="sec3_tab_button" data-tab="tab3">
+                                <img src="./img/sec3/sec03_icon03.svg" alt="">
+                                <p>이마주름 복원클리닉</p>
+                            </button>
+
+                            <button class="sec3_tab_button" data-tab="tab4">
+                                <img src="./img/sec3/sec03_icon04.svg" alt="">
+                                <p>30분 간편 리프팅</p>
+                            </button>
+
+                            <button class="sec3_tab_button" data-tab="tab5">
+                                <img src="./img/sec3/sec03_icon05.svg" alt="">
+                                <p>에프터케어 프로그램</p>
+                            </button>
+
+                            <button class="sec3_tab_button" data-tab="tab6">
+                                <img src="./img/sec3/sec03_icon06.svg" alt="">
+                                <p>실리프팅 재시술</p>
+                            </button>
+                        </div>
+
+                        <!-- 탭 콘텐츠 -->
+                        <div class="sec3_tab_contents">
+                            <!-- data-tab 으로 버튼과 연결 -->
+                            <div class="sec3_tab_content" data-tab="tab1">
+                                <ul>
+                                    <li>
+                                        <img src="./img/sec3/sec03_img01.png" alt="">
+                                    </li>
+
+                                    <li>
+                                        <div class="sec3_tab_content_text">
+                                            <h1 class="serif">
+                                                얼굴 전체의 비율을 고려한<br>
+                                                <span>풀페이스 실리프팅</span>
+                                            </h1>
+
+                                            <p class="sans">
+                                                얼굴 전체의 자연스러운 입체감과 비율을 고려하여<br>꼭 필요한 부위에 적합한 실을 선택하여 시술합니다.
+                                            </p>
+
+                                            <button class="view-more serif">
+                                                View More
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sec3_tab_content" data-tab="tab2">
+                                <ul>
+                                    <li>
+                                        <img src="./img/sec3/sec03_img02.png" alt="">
+                                    </li>
+
+                                    <li>
+                                        <div class="sec3_tab_content_text">
+                                            <h1 class="serif">
+                                                오직 실 하나로 주름을 복원하는<br>
+                                                <span>팔자 주름 복원</span>
+                                            </h1>
+
+                                            <p class="sans">
+                                                피부 절개 과정 없이 오직 비수술적 방법인 실 하나로<br>당기고 채워 깊은 팔자주름을 복원합니다..
+                                            </p>
+
+                                            <button class="view-more serif">
+                                                View More
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sec3_tab_content" data-tab="tab3">
+                                <ul>
+                                    <li>
+                                        <img src="./img/sec3/sec03_img03.png" alt="">
+                                    </li>
+
+                                    <li>
+                                        <div class="sec3_tab_content_text">
+                                            <h1 class="serif">
+                                                수술 없이 얼굴 상안부를 개선하는<br>
+                                                <span>이마 주름 복원</span>
+                                            </h1>
+
+                                            <p class="sans">
+                                                주름진 이마와 처진 눈매 등 얼굴 상안부를 수술 없이<br>전반적으로 개선하여 밝고 시원한 동안 얼굴로 변화시킵니다.
+                                            </p>
+
+                                            <button class="view-more serif">
+                                                View More
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sec3_tab_content" data-tab="tab4">
+                                <ul>
+                                    <li>
+                                        <img src="./img/sec3/sec03_img04.png" alt="">
+                                    </li>
+
+                                    <li>
+                                        <div class="sec3_tab_content_text">
+                                            <h1 class="serif">
+                                                짧은 시간 안에 변화가 일어나는<br>
+                                                <span>30분 간편 리프팅</span>
+                                            </h1>
+
+                                            <p class="sans">
+                                                30분 내외의 짧은 시술 시간으로 즉각적으로 효과를<br>나타나게 하는 비브이만의 리프팅 시술 방법입니다.
+                                            </p>
+
+                                            <button class="view-more serif">
+                                                View More
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sec3_tab_content" data-tab="tab5">
+                                <ul>
+                                    <li>
+                                        <img src="./img/sec3/sec03_img05.png" alt="">
+                                    </li>
+
+                                    <li>
+                                        <div class="sec3_tab_content_text">
+                                            <h1 class="serif">
+                                                실 리프팅의 효과를 높이는<br>
+                                                <span>에프터케어 프로그램</span>
+                                            </h1>
+
+                                            <p class="sans">
+                                                시술 후 부기와 흉터 등을 관리해주고 다양한 케어를 통해<br>더욱 탄력있는 얼굴 라인으로 개선시킵니다.
+                                            </p>
+
+                                            <button class="view-more serif">
+                                                View More
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sec3_tab_content" data-tab="tab6">
+                                <ul>
+                                    <li>
+                                        <img src="./img/sec3/sec03_img06.png" alt="">
+                                    </li>
+
+                                    <li>
+                                        <div class="sec3_tab_content_text">
+                                            <h1 class="serif">
+                                                자연스러운 복원이 가능한<br>
+                                                <span>실 리프팅 재시술</span>
+                                            </h1>
+
+                                            <p class="sans">
+                                                단순 실 리프팅 복구 뿐 아니라 필러, 보톡스, 레이저 등<br>다양한 복합적인 보완 시술을 함께 진행하여 만족도를 높입니다.
+                                            </p>
+
+                                            <button class="view-more serif">
+                                                View More
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section4">
+                <div class="sec4_container">
+                    <div class="sec4_point"></div>
+
+                    <div class="sec4_content">
+                        <ul class="sec4_text">
+                            <li class="serif">FACELIFT & SKIN TIGHTENING</li>
+                            <li class="serif">
+                                <span>자연스러운 리프팅</span>을 위해
+                                <br>섬세하게 시술합니다.
+                            </li>
+                            <li class="sans">
+                                [ 온리프 레이저 리프팅이 <span>특별한</span> 이유 ]
+                            </li>
+                        </ul>
+
+                        <div class="sec4_items">
+                            <div class="sec4_item sec4_item_01">
+                                <h1 class="sans">01</h1>
+
+                                <div>
+                                    <img src="./img/sec4/1.png" alt="">
+                                </div>
+
+                                <p class="sans">
+                                    개인별<br>
+                                    <span>맞춤 리프팅</span>
+                                </p>
+
+                                <ul class="sans hide_text">
+                                    <li>개인별</li>
+                                    <li>맞춤 리프팅</li>
+                                    <li>개인별 피부 상태를<br>
+                                        정밀 분석하여 맞춤 치료 계획 및 시술을<br>
+                                        진행합니다.</li>
+                                </ul>
+                            </div>
+
+                            <div class="sec4_item sec4_item_02">
+                                <h1 class="sans">02</h1>
+
+                                <div>
+                                    <img src="./img/sec4/2.png" alt="">
+                                </div>
+
+                                <p class="sans">
+                                    남다른<br>
+                                    <span>시술 노하우</span>
+                                </p>
+
+                                <ul class="sans hide_text">
+                                    <li>남다른</li>
+                                    <li>시술 노하우</li>
+                                    <li>다양한 레이저, 제품에 대한 이해도를<br>
+                                        바탕으로 얼굴의 전체적인 윤곽을<br>
+                                        고려하여 시술합니다.</li>
+                                </ul>
+                            </div>
+
+                            <div class="sec4_item sec4_item_03">
+                                <h1 class="sans">03</h1>
+
+                                <div>
+                                    <img src="./img/sec4/3.png" alt="">
+                                </div>
+
+                                <p class="sans">
+                                    자연스러운<br>
+                                    <span>리프팅 효과</span>
+                                </p>
+
+                                <ul class="sans hide_text">
+                                    <li>자연스러운</li>
+                                    <li>리프팅 효과</li>
+                                    <li>얼굴 전체의 자연스러운 입체감과 비율을<br>
+                                        고려하여 꼭 필요한 부위에<br>
+                                        적합한 실을 선택하여 시술합니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section5">
+                <div class="line_top"></div>
+                <div class="sec5_container">
+                    <p class="serif">FACELIFT & SKIN TIGHTENING</p>
+                    <p class="serif">섬세함을 더한 볼륨리프팅 & 스킨케어</p>
+
+                    <div class="sec5_cont_wrap">
+                        <div class="sec5_content on">
+                            <p class="sans sec5_num">1</p>
+                            <p class="sans sec5_title">볼륨 프로그램</p>
+                            <div class="sec5_content_hover">
+                                <p class="sans sec5_num_on">1</p>
+                                <div>
+                                    <p class="sans">
+                                        차별화된 레이저 시술로 디테일이 남다른
+                                    </p>
+
+                                    <p class="serif">
+                                        볼륨 프로그램
+                                    </p>
+
+                                    <button class="view-more serif">
+                                        View More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sec5_content">
+                            <p class="sans sec5_num">2</p>
+                            <p class="sans sec5_title">필러 · 보톡스</p>
+                            <div class="sec5_content_hover">
+                                <p class="sans sec5_num_on">2</p>
+                                <div>
+                                    <p class="sans">
+                                        숙련된 주입 테크닉으로 맞춤 디자인 하는
+                                    </p>
+
+                                    <p class="serif">
+                                        필러 · 보톡스
+                                    </p>
+
+                                    <button class="view-more serif">
+                                        View More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sec5_content">
+                            <p class="sans sec5_num">3</p>
+                            <p class="sans sec5_title">윤곽주사</p>
+                            <div class="sec5_content_hover">
+                                <p class="sans sec5_num_on">3</p>
+                                <div>
+                                    <p class="sans">
+                                        지방을 녹여 매끈한 라인을 잡아주는
+                                    </p>
+
+                                    <p class="serif">
+                                        윤곽주사
+                                    </p>
+
+                                    <button class="view-more serif">
+                                        View More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sec5_content">
+                            <p class="sans sec5_num">4</p>
+                            <p class="sans sec5_title">토닝케어 프로그램</p>
+                            <div class="sec5_content_hover">
+                                <p class="sans sec5_num_on">4</p>
+                                <div>
+                                    <p class="sans">
+                                        꼼꼼한 색소치료로 깨끗한 피부를 만드는
+                                    </p>
+
+                                    <p class="serif">
+                                        토닝케어 프로그램
+                                    </p>
+
+                                    <button class="view-more serif">
+                                        View More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sec5_content">
+                            <p class="sans sec5_num">5</p>
+                            <p class="sans sec5_title">프리미엄 스킨케어</p>
+                            <div class="sec5_content_hover">
+                                <p class="sans sec5_num_on">5</p>
+                                <div>
+                                    <p class="sans">
+                                        개인별 집중적인 케어를 제공하는
+                                    </p>
+
+                                    <p class="serif">
+                                        프리미엄 스킨케어
+                                    </p>
+
+                                    <button class="view-more serif">
+                                        View More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sec5_content">
+                            <p class="sans sec5_num">6</p>
+                            <p class="sans sec5_title">올인원웰빙 프로그램</p>
+                            <div class="sec5_content_hover">
+                                <p class="sans sec5_num_on">6</p>
+                                <div>
+                                    <p class="sans">
+                                        전반적인 건강을 개선하는
+                                    </p>
+
+                                    <p class="serif">
+                                        올인원웰빙 프로그램
+                                    </p>
+
+                                    <button class="view-more serif">
+                                        View More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section6">
+                <div class="sec6_img_box">
+                    <div class="sec6_img"></div>
+                </div>
+
+                <div class="sec6_text_box">
+                    <ul>
+                        <li class="sec6_name">
+                            <h1 class="serif">Dr. <span>장한슬</span></h1>
+                        </li>
+
+                        <li class="sec6_career">
+                            <h2 class="serif">주요경력</h2>
+                            <span class="sec6_line"></span>
+                            <div>
+                                <ul>
+                                    <li class="sans">· 한림대학교 의과대학 졸업</li>
+                                    <li class="sans">· 강원대학교 대학원 의학과 석사</li>
+                                    <li class="sans">· 평촌성심병원 전공의</li>
+                                    <li class="sans">· 한강성심병원 전임의</li>
+                                    <li class="sans">· 전 메이드유 강남본점 우너장</li>
+                                    <li class="sans">· 전 팽팽의원 강남점 대표원장</li>
+                                    <li class="sans">· 현 온리프의원 대표원장</li>
+                                </ul>
+                                <ul>
+                                    <li class="sans">· 대한미용성형레이저의학회 정회원</li>
+                                    <li class="sans">· 대한비만연구의사회 정회원</li>
+                                    <li class="sans">· 대한필러학회 정회원</li>
+                                    <li class="sans">· 대한레이저피부모발학회 평생회원</li>
+                                    <li class="sans">· 대한리프팅연구회 정회원</li>
+                                    <li class="sans">· 대한비만학회 정회원</li>
+                                    <li class="sans">· 대한미용의사회 정회원</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="sec6_activity">
+                            <h2 class="serif">활동</h2>
+                            <span class="sec6_line"></span>
+                            <ul>
+                                <li class="sans">· D&PS 23년 8월호 기고</li>
+                                <li class="sans">· 24년 3월 30일 동방엘라스티 실 live seminar</li>
+                                <li class="sans">· 24년 서초구의사회 춘계학술대회 강의 (5월 12일)</li>
+                            </ul>
+                        </li>
+
+                        <li class="sec6_paper">
+                            <h2 class="serif">석사논문</h2>
+                            <span class="sec6_line"></span>
+                            <ul>
+                                <li>
+                                    · 변형 응급중증도지수의 효용성과 자동화된 응급중증도지수의 적용 The Uewfulness of modified<br>
+                                    Emerg ency Severity Index and Application of Automatic Emergency Severity Index
+                                </li>
+                                <li>· Original article 2017, Annals of dermatology<br>
+                                    Serial Changes of Heat Shock Protein 70 and Onterleukin-8 in Burn Blister Fluid
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section7">
+                <div class="sec7_box">
+                    <div class="sec7_map">
+                        <!-- 카카오맵 -->
+                        <div id="daumRoughmapContainer1760593431247"
+                            class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                        <!-- 실행 스크립트 -->
+                        <script charset="UTF-8" class="daum_roughmap_loader_script"
+                            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                        <script charset="UTF-8">
+                            new daum.roughmap.Lander({
+                                "timestamp": "1760593431247",
+                                "key": "aw6gikwy2d7",
+                                "mapWidth": "700",
+                                "mapHeight": "550"
+                            }).render();
+                        </script>
+                    </div>
+
+                    <div class="sec7_text">
+                        <h1 class="sans">온리프 의원</h1>
+                        <h2 class="sans">오시는 길</h2>
+                        <p class="sans">서울특별시 강남구 봉은사로 117 4층(논현동, 아이비타워)</p>
+                        <ul class="sec7_call">
+                            <li class="sans">대표전화</li>
+                            <li class="sans">02-6953-7530</li>
+                        </ul>
+                        <ul class="sec7_time">
+                            <li class="sans">진료시간</li>
+                            <li class="sans">
+                                <p class="sans">월·목요일</p>
+                                <p class="sans">화·금요일</p>
+                                <p class="sans">토요일</p>
+                                <p class="sans">점심시간</p>
+                            </li>
+                            <li class="sans">
+                                <p class="sans">12:00 ~ 21:00</p>
+                                <p class="sans">10:00 ~ 19:00</p>
+                                <p class="sans">10:00 ~ 17:00</p>
+                                <p class="sans">13:00 ~ 14:00</p>
+                            </li>
+                        </ul>
+                        <span class="sans">·수, 일요일, 공휴일은 휴진입니다.</span>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer_logo">
+                    <img src="./img/footer/footer_Logo.png" alt="">
+                </div>
+
+                <div class="footer_text">
+                    <ul>
+                        <li>
+                            <a href="#" class="sans">개인정보처리방침</a>
+                            <a href="#" class="sans">이용약관</a>
+                            <a href="#" class="sans">비급여진료안내</a>
+                        </li>
+
+                        <li>
+                            <p class="sans">온리프의원</p>
+                            <p class="sans">서울특별시 강남구 봉은사로 117 4층(논현동, 아이비타워)</p>
+                        </li>
+
+                        <li>
+                            <p class="sans">대표자 장한슬</p>
+                            <p class="sans">사업자번호 515-38-01353</p>
+                            <p class="sans">문의 02-6953-7530</p>
+                        </li>
+
+                        <li>
+                            <p class="sans">
+                                Copyright ⓒ 2025 온리프클리닉 ALL RIGHTS RESERVED.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_sns">
+                    <div class="sns_kakao"><img src="./img/footer/sns_kakao.png" alt=""></div>
+                    <div class="sns_insta"><img src="./img/footer/sns_insta.png" alt=""></div>
+                    <div class="sns_blog"><img src="./img/footer/sns_blog.png" alt=""></div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
